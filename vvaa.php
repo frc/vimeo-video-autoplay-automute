@@ -30,7 +30,7 @@ class vvaa
 		if (!$atts['height'] && $width) $height = intval($width * 9 / 16);
 
 		return
-			"<div class='myvideo' data='http://vimeo.com/$clip_id/$autoplay/$automute/$width/$height/$title/$byline/$portrait/$loop/$color'>auto playing auto muting video</div>";
+			"<div class='myvideo' data='https://vimeo.com/$clip_id/$autoplay/$automute/$width/$height/$title/$byline/$portrait/$loop/$color'>auto playing auto muting video</div>";
 	}
 }
 
@@ -43,7 +43,7 @@ if ( !wp_script_is( vvaa, 'enqueued' ) ) {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script(
 		'jquery-froogaloop',
-		'http://a.vimeocdn.com/js/froogaloop2.min.js',
+		'https://a.vimeocdn.com/js/froogaloop2.min.js',
 		array( 'jquery' ),
 		null, // No version of the jQuery froogaloop2 Plugin.
 		true 
