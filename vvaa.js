@@ -11,7 +11,7 @@ getLoop: jQuery(".myvideo:eq(0)").attr("data").split("/")[11],
 getColor: jQuery(".myvideo:eq(0)").attr("data").split("/")[12],
 playerId : 'vid_'+jQuery(".myvideo:eq(0)").attr("data").split("/")[3],
 getFrameHtml: function(){
-	return '<iframe id="'+this.playerId+'" src="http://player.vimeo.com/video/' + this.getId + '?api=1&autoplay='+this.getAutoPlay+'&player_id='+this.playerId+'&loop='+this.getLoop+'&title='+this.getTitle+'&portrait='+this.getPortrait+'&color='+this.getColor+'" ' +
+	return '<iframe id="'+this.playerId+'" src="https://player.vimeo.com/video/' + this.getId + '?api=1&autoplay='+this.getAutoPlay+'&player_id='+this.playerId+'&loop='+this.getLoop+'&title='+this.getTitle+'&portrait='+this.getPortrait+'&color='+this.getColor+'" ' +
             'width="'+this.getWidth+'" height="'+this.getHeight+'" frameborder="0"></iframe>';
 },
 play: function(){
