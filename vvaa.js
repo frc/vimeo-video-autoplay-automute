@@ -34,6 +34,7 @@ play: function(){
 }
   jQuery(document).ready(function()
 {
-
-playVid.play();
+	if(jQuery(".myvideo:eq(0)").attr("data")){
+		playVid.play();
+	}
 });
