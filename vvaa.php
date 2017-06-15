@@ -43,7 +43,7 @@ if ( !wp_script_is( vvaa, 'enqueued' ) ) {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script(
 		'jquery-froogaloop',
-		'https://a.vimeocdn.com/js/froogaloop2.min.js',
+		'https://secure-a.vimeocdn.com/js/froogaloop2.min.js',
 		array( 'jquery' ),
 		null, // No version of the jQuery froogaloop2 Plugin.
 		true 
